@@ -21,19 +21,17 @@ apply plugin: 'maven-publish'
 apply plugin: 'maven-publish-auth'
 
 group = 'org.openrepose'
-version = '4.0.0'
+version = '5.0.0'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile "org.scala-lang:scala-library:$scalaMajDotMin.$scalaPatch"
-    testCompile "org.scalatest:scalatest_$scalaMajDotMin:2.2.0"
-}
+    compile 'org.scala-lang:scala-library:2.12.8'
 
-tasks.withType(ScalaCompile) {
-    scalaCompileOptions.useAnt = false
+    testCompile 'org.scalatest:scalatest_2.12:3.0.7'
+    testCompile 'junit:junit:4.12'
 }
 
 publishing {

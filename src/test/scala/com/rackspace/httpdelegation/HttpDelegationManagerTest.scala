@@ -20,7 +20,10 @@
 package com.rackspace.httpdelegation
 
 import org.junit.runner.RunWith
-import org.scalatest.junit.JUnitRunner
+import org.scalatest.{FunSuite, Matchers}
+import org.scalatestplus.junit.JUnitRunner
+
+import scala.util.{Failure, Success}
 
 @RunWith(classOf[JUnitRunner])
 class HttpDelegationManagerTest extends FunSuite with Matchers with HttpDelegationManager {
