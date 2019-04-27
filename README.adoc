@@ -1,0 +1,3 @@
+= repose-http-delegation
+
+A library to support HTTP delegation in Repose.
